@@ -20,7 +20,7 @@ O launcher lê apenas `launcher/config/maquinas.csv` depois de instalado como `C
 
 Ao clicar em **Conectar**, o launcher:
 
-1. localiza somente `Client\anydesk-GADX.exe` (ou a variante histórica `anyudesk-GADX.exe`);
+1. localiza somente o cliente dentro de `Client\` — `anydesk-GADX.exe`, a variante histórica `anyudesk-GADX.exe` ou, em instalações antigas, `AnyDesk__Remove....exe`;
 2. fecha a instância anterior que esteja executando dentro da pasta `Client` do próprio launcher;
 3. aguarda o encerramento e força somente essa instância dedicada caso ela não responda;
 4. abre o destino selecionado e preserva a autenticação configurada no CSV.

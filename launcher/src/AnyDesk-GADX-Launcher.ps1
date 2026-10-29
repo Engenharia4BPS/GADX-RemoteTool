@@ -31,6 +31,17 @@ function Find-AnyDeskPath {
         }
     }
 
+    # Compatibilidade com a instalacao antiga: o cliente dedicado pode ter
+    # sido iniciado com um nome temporario AnyDesk__RemoveNNNN.exe. O
+    # fallback continua limitado a pasta Client deste launcher.
+    $legacyClient = Get-ChildItem -LiteralPath $clientDir -Filter "AnyDesk__Remove*.exe" -File -ErrorAction SilentlyContinue |
+        Sort-Object Name |
+        Select-Object -First 1
+
+    if ($legacyClient) {
+        return [System.IO.Path]::GetFullPath($legacyClient.FullName)
+    }
+
     return $null
 }
 
