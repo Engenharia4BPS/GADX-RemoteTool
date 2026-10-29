@@ -35,4 +35,3 @@ Ele não procura, fecha ou altera instalações do AnyDesk fora da pasta dedicad
 4. Distribua o instalador apenas pelos canais internos autorizados.
 
 O instalador não executa o launcher automaticamente ao terminar, evitando o problema relatado ao iniciar diretamente pela tela final do Inno Setup.
-

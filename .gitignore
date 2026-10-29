@@ -1,0 +1,15 @@
+# Dados operacionais e credenciais
+launcher/config/maquinas.csv
+launcher/_backup_anydesk_appdata/
+
+# Cliente de terceiro e artefatos de distribuicao
+launcher/client/*.exe
+launcher/Output/
+portal/anydesk/downloads/*.zip
+*.exe
+*.zip
+
+# Arquivos locais e do Windows
+Thumbs.db
+Desktop.ini
+*.log
